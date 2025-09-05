@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Osahon's Portfolio</title>
+    <script src="https://kit.fontawesome.com/15fa915322.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <div class="topbar">
+        <div class="nav">
+            <!-- Logo as a link -->
+            <a href="index.html" class="brand">
+                <img src="K LOGO 1.png" alt="Logo" class="logo-img" />
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="nav-links">
+                <a href="index.html" >Home</a>
+                <a href="about.html">About me</a>
+                <a href="portfolio.html" class="activenav">Portfolio</a>
+                <button class="toggle-mode" id="toggle-mode">🌙</button>
+            </nav>
+
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+
+            <!-- Always visible Hire Me button -->
+            <div class="nav-actions">
+                <a href="https://wa.me/2348054568394?text=I%20saw%20your%20profile%20and%20I'd%20love%20to%20work%20with%20you."
+                    class="cta">HIRE ME</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile dropdown menu (hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu">
+        <li class="close-menu" id="close-menu">✖</li>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <button class="toggle-mode" id="mobile-toggle">🌙</button>
+    </div>
+
+
+    <main class="wrap" id="home">
+        <section class="portfolio">
+            <h2>Graphics (Flyers, banners, posters etc)</h2>
+            <p class="portfolio-hint">Tip: click any image to expand</p>
+            <div class="portfolio-grid" id="web-design-grid">
+                <!-- Example cards -->
+                <div class="card"><img src="https://res.cloudinary.com/dhjvwgspd/image/upload/v1755427659/Sebastine_crojbt.jpg" alt="Web project 1"></div>
+                <div class="card"><img src="https://res.cloudinary.com/dhjvwgspd/image/upload/v1755427658/Ignite_CFI_fy69mn.jpg" alt="Web project 2"></div>
+                <div class="card"><img src="/Portfolio Images/Minister's Training (2).jpg" alt="Web project 3"></div>
+                <!-- More images can go here, hidden by default -->
+                <div class="card hidden"><img src="/Portfolio Images/Worship & prayer.jpg" alt="Web project 4"></div>
+                <div class="card hidden"><img src="/Portfolio Images/Mr & Mrs.jpg" alt="Web project 5"></div>
+                <div class="card hidden"><img src="/Portfolio Images/powermustchangehands.webp" alt="Web project 5"></div>
+                <div class="card hidden"><img src="/Portfolio Images/New month, fresh design!Kicked off April with this bold and faith-filled flyer for @mfmcf_unibe.webp" alt="Web project 5"></div>
+                <div class="card hidden"><img src="/Portfolio Images/CFI FYB.jpg" alt="Web project 5"></div>
+                <div class="card hidden"><img src="/Portfolio Images/Pool party design.webp" alt="Web project 5"></div>
+                <div class="card hidden"><img src="/Portfolio Images/Jean Sunday.jpg" alt="Web project 5"></div>
+                <div class="card hidden"><img src="/Portfolio Images/CFI Join us this sunday (2).jpg" alt="Web project 5"></div>
+            </div>
+            <button class="show-more" data-target="web-design-grid">Show More</button>
+        </section>
+
+        <section class="portfolio">
+            <h2>Web Designs</h2>
+            <p class="portfolio-hint">Tip: click any image to expand</p>
+            <div class="portfolio-grid" id="graphics-grid">
+                <!-- Example cards -->
+                <div class="card"><img src="/Portfolio Images/Screenshot_5-9-2025_13255_.jpeg" alt="Graphic project 1"></div>
+                <div class="card"><img src="/Portfolio Images/Screenshot_5-9-2025_132653_.jpeg" alt="Graphic project 2"></div>
+                <!-- More images can go here, hidden by default -->
+                <!-- <div class="card hidden"><img src="your-image-9.jpg" alt="Graphic project 4"></div>
+                <div class="card hidden"><img src="your-image-10.jpg" alt="Graphic project 5"></div> -->
+            </div>
+            <!-- <button class="show-more" data-target="graphics-grid">Show More</button> -->
+        </section>
+
+        <!-- Fullscreen image viewer -->
+        <div id="image-viewer" class="hidden">
+            <span id="close-viewer">&times;</span>
+            <img id="viewer-img" src="" alt="Full view">
+        </div>
+
+    </main>
+
+    <footer>
+        <small>Thanks for scrolling, that’ll be all 😊</small>
+    </footer>
+        <style>
+        h2 {
+            margin-bottom: 15px;
+        }
+
+            .portfolio-hint {
+                margin: 6px 0 14px;
+                color: var(--muted, #666);
+                font-size: 0.95rem;
+            }
+
+        /* Portfolio grid */
+        .portfolio {
+            margin-bottom: 50px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            position: relative; /* needed for overlay */
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        /* Per-card overlay badge */
+        .card::after {
+            content: "Click to expand";
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 0.8rem;
+            padding: 6px 10px;
+            border-radius: 999px;
+            opacity: 0.95;
+            pointer-events: none;
+            transition: transform 0.18s ease, opacity 0.18s ease;
+        }
+
+        .card:hover::after {
+            transform: translateY(-4px) scale(1.03);
+            opacity: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* Show More button */
+        .show-more {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .show-more:hover {
+            background: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Fullscreen viewer */
+        #image-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        /* ensure .hidden actually hides the #image-viewer (higher specificity) */
+        #image-viewer.hidden {
+            display: none;
+        }
+
+        #image-viewer img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #close-viewer {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card img {
+                height: 140px;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+
+</html>

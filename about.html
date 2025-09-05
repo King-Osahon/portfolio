@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Osahon's Portfolio</title>
+  <script src="https://kit.fontawesome.com/15fa915322.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+<!-- NAV -->
+  <div class="topbar">
+    <div class="nav">
+      <!-- Logo as a link -->
+      <a href="index.html" class="brand">
+        <img src="K LOGO 1.png" alt="Logo" class="logo-img" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <!-- Creative About Me Section Start -->
+        <button class="toggle-mode" id="toggle-mode">🌙</button>
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Always visible Hire Me button -->
+      <div class="nav-actions">
+        <a href="https://wa.me/2348054568394?text=I%20saw%20your%20profile%20and%20I'd%20love%20to%20work%20with%20you." class="cta">HIRE ME</a>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile dropdown menu (hidden by default) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <li class="close-menu" id="close-menu">✖</li>
+    <a href="index.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <button class="toggle-mode" id="mobile-toggle">🌙</button>
+  </div>
+
+
+<section class="about" id="about">
+  <div class="about-container">
+    
+    <!-- Profile Image -->
+    <div class="about-img">
+      <img src="your-profile-image.jpg" alt="Osahon Profile">
+    </div>
+
+    <!-- Description -->
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h3>Creative Designer & Developer</h3>
+      <p>
+        Hi, I’m <strong>Osahon</strong> – a passionate designer and developer who loves 
+        crafting beautiful experiences both online and offline.  
+        I specialize in <em>Graphic Design</em>, <em>Web Development</em>, and <em>UI/UX Design</em>.  
+      </p>
+      <p>
+        Over the years, I’ve worked on projects ranging from sleek, 
+        responsive websites to bold and impactful brand visuals like posters, flyers, and banners.  
+        My mission is simple: to help businesses and individuals stand out with 
+        creative solutions that are visually stunning and user-friendly.
+      </p>
+      <p>
+        When I’m not working, you’ll probably find me sketching ideas, 
+        learning new tech, or exploring creative ways to blend design with functionality.
+      </p>
+
+      <!-- Quick Details (optional) -->
+      <ul class="about-list">
+        <li><strong>Experience:</strong> 4+ Years</li>
+        <li><strong>Location:</strong> Benin City, Nigeria</li>
+        <li><strong>Services:</strong> Design, Development, Branding</li>
+      </ul>
+
+      <!-- CTA -->
+      <a href="https://wa.me/2348054568394?text=I%20saw%20your%20profile%20and%20I'd%20love%20to%20work%20with%20you." class="pill primary">Let’s Work Together</a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+    <small>Thanks for scrolling, that’ll be all 😊</small>
+  </footer>
+
+  <script src="script.js"></script>
+  <style>
+    /* About Section - use theme variables so dark mode applies */
+.about {
+  padding: 60px 20px;
+  background: var(--bg);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap; /* For mobile stacking */
+}
+
+/* Image Side */
+.about-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.about-img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes it circular */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Text Side */
+.about-text {
+  flex: 2 1 400px;
+}
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.about-text h3 {
+  font-size: 1.3rem;
+  color: var(--brand);
+  margin-bottom: 20px;
+}
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: var(--muted);
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.about-list li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.about-list strong {
+  color: var(--ink);
+}
+  </style>
+ </body> 
+</html>

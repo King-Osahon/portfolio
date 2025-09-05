@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Osahon's Portfolio</title>
+  <script src="https://kit.fontawesome.com/15fa915322.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="topbar">
+    <div class="nav">
+      <!-- Logo as a link -->
+      <a href="index.html" class="brand">
+        <img src="K LOGO 1.png" alt="Logo" class="logo-img" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links">
+        <a href="index.html" class="activenav">Home</a>
+        <a href="about.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <button class="toggle-mode" id="toggle-mode">🌙</button>
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Always visible Hire Me button -->
+      <div class="nav-actions">
+        <a href="https://wa.me/2348054568394?text=I%20saw%20your%20profile%20and%20I'd%20love%20to%20work%20with%20you." class="cta">HIRE ME</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown menu (hidden by default) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <li class="close-menu" id="close-menu">✖</li>
+    <a href="#home">Home</a>
+    <a href="#about">About me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <button class="toggle-mode" id="mobile-toggle">🌙</button>
+  </div>
+
+
+  <main class="wrap" id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="hello">Hey there, I'm <strong>Osahon</strong></div>
+        <h1 class="title">
+          <span class="accent" id="typed-target">GRAPHIC DESIGNER</span>
+        </h1>
+        <p class="subtitle">I design websites and create cool graphics. From clean,
+          responsive sites to eye-catching flyers, posters, and banners, I help brands
+          look good online and offline.</p>
+        <div class="actions">
+          <a class="pill primary" href="https://wa.me/2348054568394?text=I%20saw%20your%20profile%20and%20I'd%20love%20to%20work%20with%20you.">Hire me</a>
+          <a class="pill" href="portfolio.html">Portfolio</a>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="blob"></div>
+        <img src="/K headshot 1.png" alt="Osahon" />
+      </div>
+    </section>
+
+
+
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="stat">
+        <div class="big" data-count="4">0</div>
+        <div class="cap">Years&nbsp;Experience</div>
+      </div>
+      <div class="stat">
+        <div class="big" data-count="50">0</div>
+        <div class="cap">Projects&nbsp;Completed</div>
+      </div>
+      <div class="stat">
+        <div class="big" data-count="20">0</div>
+        <div class="cap">Happy&nbsp;Customers</div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="about">
+      <h2 class="section-title">What I do</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>Graphic Design</h3>
+          <p>Flyers, posters, banners, logos — bold visuals that build brand recognition and leave a lasting impression.
+          </p>
+        </article>
+        <article class="card">
+          <div class="icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>Full Stack Development</h3>
+          <p>Crafting modern, responsive websites that look amazing and run smoothly across devices.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Clean layouts and user‑focused interfaces that make navigating your site or app feel effortless.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS / CAROUSEL -->
+    <section class="projects" id="portfolio">
+      <h2 class="section-title">My Latest Projects</h2>
+      <div class="carousel" aria-label="Auto‑carousel of recent projects">
+        <div class="track" id="track">
+          <div class="slide"><img alt="Project 1"
+              src="https://res.cloudinary.com/dhjvwgspd/image/upload/v1755427658/Ignite_CFI_fy69mn.jpg" /></div>
+          <div class="slide"><img alt="Project 2"
+              src="https://res.cloudinary.com/dhjvwgspd/image/upload/v1755427659/CFI_Join_us_this_sunday_p6h5ml.jpg" />
+          </div>
+          <div class="slide"><img alt="Project 3"
+              src="https://res.cloudinary.com/dhjvwgspd/image/upload/v1755427659/Sebastine_crojbt.jpg" /></div>
+          <div class="slide"><img alt="Project 3"
+              src="https://res.cloudinary.com/dhjvwgspd/image/upload/v1756381169/Minister_s_Training_cdgknf.jpg" />
+          </div>
+      </div>
+      <div class="center-cta">
+        <a class="pill" href="portfolio.html">View my Portfolio</a>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section>
+      <h2 class="section-title">My Tools</h2>
+      <div class="tools">
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 128 128">
+            <path fill="#001e36"
+              d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6" />
+            <path fill="#31a8ff"
+              d="M45.867 33.333c-1.6 0-3.2 0-4.853.054c-1.654.053-3.201.053-4.641.107c-1.44.053-2.773.053-4.053.106c-1.227.053-2.08.053-2.987.053c-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053c.533.053 1.386.053 2.666.053c4.374 0 8.374-.48 12-1.813c3.467-1.28 6.454-3.52 8.587-6.507q3.2-4.48 3.2-11.36c0-2.4-.426-4.693-1.226-6.933A17 17 0 0 0 64 39.36a19.05 19.05 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653m1.19 10.505c1.9.036 3.75.368 5.476 1.068c1.547.587 2.827 1.654 3.734 3.04a8.8 8.8 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493c-1.174 1.333-2.667 2.347-4.373 2.827c-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053c1.013-.054 2.239-.054 3.626-.054q.41-.01.817-.002m44.73 2.723c-3.787 0-6.934.586-9.44 1.866c-2.293 1.067-4.267 2.773-5.6 4.906c-1.173 1.974-1.814 4.16-1.814 6.454a11.45 11.45 0 0 0 1.227 5.44a13.8 13.8 0 0 0 4.054 4.533a32.6 32.6 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506c.853.694 1.28 1.387 1.28 2.134c0 .96-.587 1.867-1.44 2.24c-.96.48-2.4.747-4.427.747c-2.133 0-4.267-.267-6.294-.8a22.8 22.8 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053c-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.5 21.5 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693c3.84 0 7.041-.586 9.654-1.706c2.4-.96 4.48-2.613 5.973-4.747a12.4 12.4 0 0 0 2.08-7.093a11.5 11.5 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.6 38.6 0 0 0-8.213-3.894a49 49 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44c-.32-.427-.533-.906-.533-1.386s.16-1.013.426-1.44c.374-.533.96-.907 1.653-1.067c1.014-.266 2.134-.427 3.2-.374c2.027 0 4 .267 5.974.694c1.814.373 3.52.96 5.12 1.814c.213.106.48.106.96 0a.66.66 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64c-.107-.213-.32-.427-.533-.48A18.8 18.8 0 0 0 98.4 47.04a46 46 0 0 0-6.613-.48z" />
+          </svg> <br>
+          <h3>Photoshop</h3>
+        </div>
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 128 128">
+            <g fill="#00c4cc">
+              <path
+                d="M59.39.152c-.484.051-1.995.23-3.328.387c-5.374.613-11.468 2.227-16.816 4.48C19.891 13.106 5.324 30.849 1.305 51.2C.359 56.04.129 58.418.129 64c0 7.195.715 12.16 2.61 18.434c6.195 20.53 22.323 36.632 42.906 42.851c6.195 1.871 11.187 2.586 18.355 2.586c7.195 0 12.16-.715 18.434-2.61c20.53-6.195 36.632-22.323 42.851-42.906c1.871-6.195 2.586-11.187 2.586-18.355c0-3.047-.152-6.527-.332-7.809c-2.074-14.796-8.168-27.238-18.328-37.402C99.07 8.703 86.68 2.586 72.19.512c-1.996-.282-11.238-.54-12.8-.36m-20.863 40.32c1.36.41 1.996.794 2.918 1.715c1.793 1.82 2.203 2.817 2.203 5.555c0 2.051-.078 2.434-.691 3.508c-1.18 1.996-3.918 3.84-5.812 3.89c-1.333.028-1.278-.562.18-2.097c1.945-2.023 2.226-2.79 2.226-5.813c-.024-2.917-.383-3.914-1.739-4.734c-1.128-.691-2.355-.64-4.148.203c-4.66 2.23-9.703 9.653-11.672 17.258c-2.613 10.137 2.02 18.25 9.649 16.867c2.226-.41 6.425-2.558 8.246-4.25c1.508-1.379 1.508-1.406 1.66-3.12c.336-3.587 2.867-7.169 6.25-8.833c1.558-.77 1.945-.844 4.043-.844c1.996 0 2.457.102 3.43.637c3.097 1.77 2.457 5.89-.895 5.89c-1.945 0-2.945-1-1.535-1.534c1.383-.512.867-2.434-.742-2.868c-1.895-.488-4.047.793-5.403 3.25c-1.64 2.97-1.715 6.504-.156 8.114c1.512 1.613 3.406.336 4.867-3.329c.766-1.867 1.867-2.867 3.149-2.867c1.125 0 1.332.692.843 2.793c-.718 3.25-.23 4.094 1.793 3.098c.664-.309 1.766-1.023 2.43-1.535l1.254-1l.848-4.43c.922-4.965 1.277-5.633 3.172-5.988c1.82-.336 2.23.562 1.562 3.402l-.36 1.59l1.333-1.36c3.148-3.226 7.015-4.812 8.347-3.48c.715.715.637 1.613-.386 4.785c-.485 1.512-1.153 3.895-1.457 5.25c-.461 2.047-.489 2.535-.23 2.868c.82.972 3.327-.028 5.554-2.204l1.305-1.277l.156-2.844c.152-3.277.457-4.453 1.328-5.504c.82-.972 2.305-1.687 3.098-1.484c.793.207.793.973.078 3.227c-1 3.097-.895 10.238.129 10.238c.41 0 2.507-2.2 3.84-4.043l.996-1.36l-.793-.816c-1.383-1.46-1.715-2.406-1.715-4.789c0-1.738.129-2.379.562-3.227c.719-1.328 1.844-2.3 3.176-2.687c1.406-.434 3.148.281 3.863 1.562c.719 1.305.54 4.223-.383 6.223l-.664 1.457h.895c1.23 0 1.715-.305 3.918-2.379c1.152-1.101 2.484-2.05 3.48-2.511c3.918-1.84 8.528-.895 9.293 1.921c.64 2.254-.765 3.84-3.226 3.66c-1.766-.128-2.098-.59-1.074-1.456c1.843-1.54 0-3.508-2.637-2.793c-1.434.386-3.047 1.996-3.89 3.867c-1.692 3.738-.794 8.14 1.636 8.14c.973 0 2.691-1.921 3.355-3.789c.793-2.152 2.457-3.507 3.711-3.02c.692.255.743.946.309 3.122c-.488 2.383-.563 4.61-.18 5.633c.153.382.614 1.101 1.051 1.586c.816.921.844 1.254.152 1.691c-.332.23-.77.129-1.843-.46c-1.485-.77-2.766-2.153-3.227-3.458l-.281-.766l-1.024.766c-.59.41-1.511.871-2.047 1.023c-2.125.563-4.738-.894-5.964-3.351c-.489-.95-.641-3.738-.282-4.813c.204-.59.204-.59-.617-.18c-.433.231-1.355.485-2.07.563c-1.18.13-1.36.258-2.535 1.742c-1.664 2.07-4.61 4.864-5.813 5.454c-2.558 1.277-3.402.918-4.07-1.72l-.461-1.765l-1.102.973c-1.406 1.23-4.222 2.715-5.836 3.074c-1.535.332-3.175-.156-3.84-1.18c-.995-1.535-.663-4.785.922-9.164c1.176-3.25.333-3.3-2.636-.203c-2.203 2.328-3.149 3.992-3.762 6.578c-.64 2.688-1.41 3.66-3.148 4.07c-1.051.231-1.54-.41-1.332-1.816l.152-1.129l-.973.668c-1.383.946-3.125 1.817-4.328 2.149s-2.789-.024-3.172-.692c-.691-1.175-.691-1.175-1.765-.332c-2.332 1.895-5.66 1.356-7.348-1.152l-.54-.793l-1.687 1.562c-4.867 4.454-10.957 6.45-15.464 5.067c-5.735-1.738-8.907-6.656-8.856-13.746c.024-7.117 3.172-14.617 8.473-20.172c2.996-3.125 5.812-4.969 8.68-5.66c2.07-.512 3.328-.485 5.296.129zm0 0" />
+              <path
+                d="M90.418 58.676c-.563.562-.356 2.816.36 4.25c.359.742.742 1.332.87 1.332c.102 0 .332-.59.512-1.309c.64-2.66-.512-5.504-1.742-4.273m0 0" />
+            </g>
+          </svg> <br>
+          <h3>Canva</h3>
+        </div>
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 128 128">
+            <path fill="#300"
+              d="M22.7 1.6h82.7c12.5 0 22.7 10.1 22.7 22.7v79.5c0 12.5-10.1 22.7-22.7 22.7H22.7C10.1 126.4 0 116.3 0 103.7V24.3C0 11.7 10.1 1.6 22.7 1.6" />
+            <path fill="#ff9a00"
+              d="M61.9 76.3H42l-4 12.5c-.1.5-.5.8-1 .7H27c-.6 0-.7-.3-.6-1l17.2-49.4c.2-.5.3-1.1.5-1.8c.2-1.1.3-2.3.3-3.5c-.1-.3.2-.5.4-.6h13.8c.4 0 .6.2.7.4l19.5 54.9c.2.6 0 .9-.5.9H67.1c-.4.1-.7-.2-.9-.6zM45.1 65.4h13.5c-.3-1.1-.7-2.5-1.2-3.8c-.5-1.4-1-3-1.4-4.6c-.5-1.7-1-3.3-1.5-4.9c-.5-1.7-1-3.2-1.4-4.7q-.6-2.25-1.2-4.2h-.1q-.75 3.45-1.8 6.9c-.8 2.6-1.6 5.2-2.5 7.9c-.8 2.7-1.6 5.2-2.4 7.4m45.6-22.7c-1.8.1-3.5-.6-4.7-1.9s-1.9-3.1-1.8-4.9c-.1-1.8.6-3.5 1.9-4.7s3-1.9 4.7-1.9c2.1 0 3.7.6 4.9 1.9s1.8 3 1.8 4.7c.1 1.8-.6 3.6-1.9 4.9s-3.1 2-4.9 1.9m-6 46.3V47.9c0-.5.2-.7.7-.7H96c.5 0 .7.3.7.7V89c0 .6-.2.9-.7.9H85.5c-.5-.1-.8-.4-.8-.9" />
+          </svg> <br>
+          <h3>Illustrator</h3>
+        </div>
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
+            <path fill="#f4511e" d="M12 4h4v8h-4a4 4 0 0 1-4-4a4 4 0 0 1 4-4" />
+            <path fill="#ff8a65" d="M20 12h-4V4h4a4 4 0 0 1 4 4a4 4 0 0 1-4 4" />
+            <rect width="8" height="8" x="16" y="12" fill="#29b6f6" rx="4" transform="rotate(180 20 16)" />
+            <path fill="#7c4dff" d="M12 12h4v8h-4a4 4 0 0 1-4-4a4 4 0 0 1 4-4" />
+            <path fill="#00e676" d="M12 20h4v4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4" />
+          </svg> <br>
+          <h3>Figma</h3>
+        </div>
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256">
+            <g fill="none">
+              <rect width="256" height="256" fill="#0073aa" rx="60" />
+              <path fill="#fff"
+                d="M42.214 127.994c0 33.955 19.733 63.299 48.347 77.205L49.641 93.083a85.5 85.5 0 0 0-7.427 34.911m143.694-4.329c0-10.601-3.808-17.943-7.074-23.658c-4.349-7.066-8.425-13.05-8.425-20.116c0-7.886 5.981-15.226 14.405-15.226c.381 0 .741.047 1.112.068c-15.262-13.982-35.595-22.519-57.929-22.519c-29.968 0-56.335 15.376-71.673 38.666c2.012.06 3.909.103 5.52.103c8.973 0 22.862-1.09 22.862-1.09c4.624-.272 5.17 6.52.55 7.067c0 0-4.647.547-9.818.818l31.238 92.918l18.773-56.303l-13.365-36.618c-4.619-.271-8.995-.818-8.995-.818c-4.623-.271-4.081-7.339.542-7.066c0 0 14.166 1.088 22.595 1.088c8.972 0 22.862-1.088 22.862-1.088c4.628-.273 5.171 6.519.55 7.066c0 0-4.657.547-9.818.818l31.001 92.214l8.556-28.592c3.709-11.866 6.531-20.388 6.531-27.732" />
+              <path fill="#fff"
+                d="m129.503 135.498l-25.738 74.79a85.8 85.8 0 0 0 24.233 3.495a85.7 85.7 0 0 0 28.486-4.863a7.5 7.5 0 0 1-.61-1.182zm73.766-48.66a66 66 0 0 1 .578 8.82c0 8.705-1.626 18.491-6.523 30.727l-26.203 75.759c25.503-14.872 42.657-42.501 42.657-74.148c.001-14.915-3.808-28.94-10.509-41.158" />
+              <path fill="#fff"
+                d="M127.998 28C72.86 28 28 72.857 28 127.994c0 55.144 44.86 99.999 99.998 99.999c55.135 0 100.002-44.855 100.002-99.999C227.998 72.857 183.133 28 127.998 28m0 195.41c-52.61 0-95.413-42.804-95.413-95.416c0-52.609 42.802-95.409 95.413-95.409c52.607 0 95.407 42.8 95.407 95.409c0 52.612-42.8 95.416-95.407 95.416" />
+            </g>
+          </svg> <br>
+          <h3>WordPress</h3>
+        </div>
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256">
+            <g fill="none">
+              <rect width="256" height="256" fill="#f4f2ed" rx="60" />
+              <path fill="#161614"
+                d="M128.001 30C72.779 30 28 74.77 28 130.001c0 44.183 28.653 81.667 68.387 94.89c4.997.926 6.832-2.169 6.832-4.81c0-2.385-.093-10.262-.136-18.618c-27.82 6.049-33.69-11.799-33.69-11.799c-4.55-11.559-11.104-14.632-11.104-14.632c-9.073-6.207.684-6.079.684-6.079c10.042.705 15.33 10.305 15.33 10.305c8.919 15.288 23.394 10.868 29.1 8.313c.898-6.464 3.489-10.875 6.349-13.372c-22.211-2.529-45.56-11.104-45.56-49.421c0-10.918 3.906-19.839 10.303-26.842c-1.039-2.519-4.462-12.69.968-26.464c0 0 8.398-2.687 27.508 10.25c7.977-2.215 16.531-3.326 25.03-3.364c8.498.038 17.06 1.149 25.051 3.365c19.087-12.939 27.473-10.25 27.473-10.25c5.443 13.773 2.019 23.945.98 26.463c6.412 7.003 10.292 15.924 10.292 26.842c0 38.409-23.394 46.866-45.662 49.341c3.587 3.104 6.783 9.189 6.783 18.519c0 13.38-.116 24.149-.116 27.443c0 2.661 1.8 5.779 6.869 4.797C199.383 211.64 228 174.169 228 130.001C228 74.771 183.227 30 128.001 30M65.454 172.453c-.22.497-1.002.646-1.714.305c-.726-.326-1.133-1.004-.898-1.502c.215-.512.999-.654 1.722-.311c.727.326 1.141 1.01.89 1.508m4.919 4.389c-.477.443-1.41.237-2.042-.462c-.654-.697-.777-1.629-.293-2.078c.491-.442 1.396-.235 2.051.462c.654.706.782 1.631.284 2.078m3.374 5.616c-.613.426-1.615.027-2.234-.863c-.613-.889-.613-1.955.013-2.383c.621-.427 1.608-.043 2.236.84c.611.904.611 1.971-.015 2.406m5.707 6.504c-.548.604-1.715.442-2.57-.383c-.874-.806-1.118-1.95-.568-2.555c.555-.606 1.729-.435 2.59.383c.868.804 1.133 1.957.548 2.555m7.376 2.195c-.242.784-1.366 1.14-2.499.807c-1.13-.343-1.871-1.26-1.642-2.052c.235-.788 1.364-1.159 2.505-.803c1.13.341 1.871 1.252 1.636 2.048m8.394.932c.028.824-.932 1.508-2.121 1.523c-1.196.027-2.163-.641-2.176-1.452c0-.833.939-1.51 2.134-1.53c1.19-.023 2.163.639 2.163 1.459m8.246-.316c.143.804-.683 1.631-1.864 1.851c-1.161.212-2.236-.285-2.383-1.083c-.144-.825.697-1.651 1.856-1.865c1.183-.205 2.241.279 2.391 1.097" />
+            </g>
+          </svg> <br>
+          <h3>GitHub</h3>
+        </div>
+        <div class="tool"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 128 128">
+            <path fill="#de1c59"
+              d="M27.255 80.719c0 7.33-5.978 13.317-13.309 13.317S.63 88.049.63 80.719s5.987-13.317 13.317-13.317h13.309zm6.709 0c0-7.33 5.987-13.317 13.317-13.317s13.317 5.986 13.317 13.317v33.335c0 7.33-5.986 13.317-13.317 13.317c-7.33 0-13.317-5.987-13.317-13.317zm0 0" />
+            <path fill="#35c5f0"
+              d="M47.281 27.255c-7.33 0-13.317-5.978-13.317-13.309S39.951.63 47.281.63s13.317 5.987 13.317 13.317v13.309zm0 6.709c7.33 0 13.317 5.987 13.317 13.317s-5.986 13.317-13.317 13.317H13.946C6.616 60.598.63 54.612.63 47.281c0-7.33 5.987-13.317 13.317-13.317zm0 0" />
+            <path fill="#2eb57d"
+              d="M100.745 47.281c0-7.33 5.978-13.317 13.309-13.317s13.317 5.987 13.317 13.317s-5.987 13.317-13.317 13.317h-13.309zm-6.709 0c0 7.33-5.987 13.317-13.317 13.317s-13.317-5.986-13.317-13.317V13.946C67.402 6.616 73.388.63 80.719.63c7.33 0 13.317 5.987 13.317 13.317zm0 0" />
+            <path fill="#ebb02e"
+              d="M80.719 100.745c7.33 0 13.317 5.978 13.317 13.309s-5.987 13.317-13.317 13.317s-13.317-5.987-13.317-13.317v-13.309zm0-6.709c-7.33 0-13.317-5.987-13.317-13.317s5.986-13.317 13.317-13.317h33.335c7.33 0 13.317 5.986 13.317 13.317c0 7.33-5.987 13.317-13.317 13.317zm0 0" />
+          </svg> <br>
+          <h3>Slack</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div>
+        <h3>Have an idea in mind?<br><span class="accent">Let’s bring it to life.</span></h3>
+        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thanks! I\'ll get back to you.');">
+          <label for="name">What’s your name?</label>
+          <input id="name" name="name" placeholder="John Doe" required>
+          <label for="email">Your email address</label>
+          <input id="email" name="email" type="email" placeholder="hello@example.com" required>
+          <label for="about">Tell me about your project</label>
+          <textarea id="about" name="about" placeholder="A few lines about what you need…"></textarea>
+          <button class="cta" type="submit">Send</button>
+          <div id="form-message" class="hidden"></div> <!-- 🔹 message box -->
+        </form>
+      </div>
+      <div>
+        <p>Or contact me via my socials</p>
+        <div class="socials">
+          <a class="soc"
+            href="https://wa.me/2348054568394?text=I%20saw%20your%20profile%20and%20I'd%20love%20to%20work%20with%20you."><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a class="soc" href="https://www.facebook.com/messages/t/100079557505336?text=I%20saw%20your%20profile%20and%20I%27d%20like%20to%20work%20with%20you."><i class="fa-brands fa-facebook"></i></a>
+          <a class="soc"
+            href="mailto:kingidufueko@gmail.com?subject=I'd%20like%20to%20work%20with%20you&body=I%20saw%20your%20profile%20and%20I'd%20like%20to%20work%20with%20you."><i
+              class="fa-solid fa-envelope"></i></a>
+          <a class="soc" href="https://www.instagram.com/idufuekoking/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Thanks for scrolling, that’ll be all 😊</small>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("7nqctDhEJeKjPlB4V"); // Your EmailJS user ID
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const messageBox = document.getElementById("form-message");
+
+      emailjs.sendForm("service_m3rnra4", "template_0s19i39", this)
+        .then(() => {
+          messageBox.textContent = "Thanks! Your message has been sent.";
+          messageBox.className = "success";
+          messageBox.classList.remove("hidden");
+          this.reset();
+        }, (error) => {
+          messageBox.textContent = "Oops! Something went wrong. Please try again.";
+          messageBox.className = "error";
+          messageBox.classList.remove("hidden");
+        });
+    });
+  </script>
+
+</body>
+
+</html>
